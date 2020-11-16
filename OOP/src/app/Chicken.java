@@ -15,12 +15,7 @@ public class Chicken extends Food {
     }
 
     public boolean isFinished(int targetTemp) {
-        targetTemp = 180;
-        if (temperature >= targetTemp){
-            return true;
-        } else {
-            return false;
-        }
+        return this.temperature >= targetTemp;
     }
 
     public String getType() {
